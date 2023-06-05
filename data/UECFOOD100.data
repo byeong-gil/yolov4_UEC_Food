@@ -1,0 +1,5 @@
+classes= 100
+train  = data/UECFOOD100/train.txt  
+valid  = data/UECFOOD100/test.txt  
+names = data/food100.names  
+backup = backup/
