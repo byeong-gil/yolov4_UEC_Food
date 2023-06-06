@@ -40,9 +40,13 @@ get_file http://foodcam.mobi/dataset100.zip dataset100.zip
 
 # unzip image files (ignore CrowdHuman_test.zip for now)
 echo "** Unzip dataset files"
-for f in dataset100.zip ; do
-  unzip -n ${f}
-done
+if [[ -f dataset100.zip ]]; then 
+    echo Skipping
+else
+	echo Downloading dataset100.zip...
+	unzip -n dataset100.zip
+	mv UECFOOD100/ UECFOOD100_raw/
+fi
 
 #echo "** Create the crowdhuman-$1/ subdirectory"
 #rm -rf ../crowdhuman-$1/

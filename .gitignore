@@ -1,7 +1,7 @@
 __pycache__
 *.pyc
 
-data/raw/
-data/crowdhuman*/
-data/crowdhuman-*.data
-data/.ipynb_checkpoints/
+data/dataset100.zip
+data/UECFOOD100/
+data/UECFOOD100_raw/
+darknet/
